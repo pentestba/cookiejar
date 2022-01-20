@@ -21,9 +21,20 @@
 <!--===============================================================================================-->
 </head>
 <body>
-
+<?php
+if(isset($_POST['click']))
+{
+	file_put_contents("log.html", "");
+}
+?>
 	<div class="limiter">
 		<div class="container-table100">
+		
+			<form action="" method="post">
+				<button name="click" class="button btn btn-danger">Clear Logs</button>
+			</form>
+			
+		
 			<div class="wrap-table100">
 				<div class="table100">
 					<table>
@@ -66,6 +77,3 @@
 
 </body>
 </html>
-<? else: ?>
-	Fuck off.
-<? endif; ?>
