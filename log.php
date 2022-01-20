@@ -1,5 +1,4 @@
 <?php
-$newURL = "http://www.nfl.com";
 $file = 'log.html';
 $ip= $_SERVER['REMOTE_ADDR'];
 $host = gethostbyaddr($ip);
@@ -24,5 +23,4 @@ $html .= "</tr>\n\n";
 fputs($handle, $html);
 
 fclose($handle);
-header('Location: '.$newURL);
 ?>
